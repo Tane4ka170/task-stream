@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDownAZ } from "lucide-react";
+import { ArrowDownUp } from "lucide-react";
 import React from "react";
+import SortingDropDown from "../../DropDown/SortingDropDown";
 
 function ProjectsAreaHeader() {
   return (
@@ -11,7 +12,7 @@ function ProjectsAreaHeader() {
 
       <div className="flex items-center gap-2">
         <div className="flex gap-1 items-center">
-          <ArrowDownAZ className="text-xl text-gray-200" />
+          <ArrowDownUp className="text-xl text-gray-200" />
           <span className="text-sm text-gray-400">Projects</span>
         </div>
 
