@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import Navbar from "./Components/navbar/Navbar";
+import ProjectsArea from "./Components/projectsArea/projectsArea";
 
 export default function Home() {
   const { theme } = useTheme();
