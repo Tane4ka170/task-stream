@@ -17,7 +17,7 @@ function ProjectsAreaHeader() {
         </div>
 
         <SortingDropDown />
-        <Button className="px-4 rounded-3xl"></Button>
+        <Button className="px-4 rounded-3xl">Add Task</Button>
       </div>
     </div>
   );
