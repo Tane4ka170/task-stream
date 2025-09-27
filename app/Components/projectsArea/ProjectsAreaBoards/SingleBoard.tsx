@@ -1,5 +1,6 @@
 import { useTheme } from "next-themes";
 import React from "react";
+import SingleTask from "./SingleTask";
 
 export type Board = {
   name: string;
@@ -24,7 +25,13 @@ function SingleBoard({ board }: { board: Board }) {
         {/* container for task number */}
         <div className="size-6 rounded-full bg-primary text-white flex items-center justify-center">
           <span className="text-sm mt-[2px]">{numberTasks}</span>
-        </div>
+        </div>{" "}
+      </div>
+      {/* container tasks */}
+      <div className="mt-7">
+        {[1, 2].map((index) => (
+          <SingleTask key={index} />
+        ))}
       </div>
     </div>
   );
