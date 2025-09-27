@@ -5,7 +5,7 @@ import ProjectsAreaTaskBoard from "./ProjectsAreaBoards/ProjectsAreaTaskBoard";
 
 function ProjectsArea() {
   return (
-    <Card className="shadow-none p-7 rounded-xl px-7 flex flex-col gap-8">
+    <Card className="shadow-none p-7 rounded-3xl px-7 flex flex-col gap-8">
       <ProjectsAreaHeader />
       <ProjectsAreaTaskBoard />
     </Card>
