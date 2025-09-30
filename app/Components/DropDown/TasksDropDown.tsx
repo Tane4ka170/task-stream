@@ -43,7 +43,13 @@ function TasksDropDown() {
             item.separator ? (
               <DropdownMenuSeparator key={index} />
             ) : (
-              <DropdownMenuItem key={index} className={``}></DropdownMenuItem>
+              <DropdownMenuItem
+                key={index}
+                className={`flex items-center gap-1 p-[10px] ${item.classsName}`}
+              >
+                {item.icon}
+                span
+              </DropdownMenuItem>
             )
           )}
         </DropdownMenuContent>
