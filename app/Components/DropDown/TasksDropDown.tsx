@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { CircleX, Ellipsis, Pencil } from "lucide-react";
-import React from "react";
+import React, { JSX } from "react";
 
 type MenuItem = {
   icon: JSX.Element;
@@ -45,10 +45,11 @@ function TasksDropDown() {
             ) : (
               <DropdownMenuItem
                 key={index}
-                className={`flex items-center gap-1 p-[10px] ${item.classsName}`}
+                className={`flex items-center gap-1 p-[10px] ${item.className}`}
               >
+                npm i react-circular-progressbar
                 {item.icon}
-                span
+                <span>{item.label}</span>
               </DropdownMenuItem>
             )
           )}
